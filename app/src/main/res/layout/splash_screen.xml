@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/splash_screen_scene">
+
+    <ImageView
+        android:id="@+id/jretaillogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jretaillogo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/jretaillogo"
+        app:layout_constraintStart_toStartOf="@+id/jretaillogo"
+        app:layout_constraintTop_toBottomOf="@+id/jretaillogo"
+        app:layout_constraintVertical_bias="0.94"
+        app:srcCompat="@drawable/kalem_logo_png" />
+
+    <EditText
+        android:id="@+id/usernametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/jretaillogo"
+        app:layout_constraintStart_toStartOf="@+id/jretaillogo"
+        app:layout_constraintTop_toBottomOf="@+id/jretaillogo" />
+
+    <EditText
+        android:id="@+id/passwordtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/usernametext"
+        app:layout_constraintStart_toStartOf="@+id/usernametext"
+        app:layout_constraintTop_toBottomOf="@+id/usernametext"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daxil ol"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="451dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

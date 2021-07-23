@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/ProductAcceptbtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/warehouse"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.06999999"
+            tools:src="@drawable/warehouse" />
+
+        <TextView
+            android:id="@+id/productaccepttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mal Qəbulu"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/ProductAcceptbtn"
+            app:layout_constraintStart_toStartOf="@+id/ProductAcceptbtn"
+            app:layout_constraintTop_toBottomOf="@+id/ProductAcceptbtn" />
+
+        <ImageButton
+            android:id="@+id/WarehouseRecieptbtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/receipt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.813"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ProductAcceptbtn"
+            app:layout_constraintVertical_bias="0.0"
+            tools:src="@drawable/receipt" />
+
+        <TextView
+            android:id="@+id/WarehouseReciepttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Depo fişleri"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/WarehouseRecieptbtn"
+            app:layout_constraintStart_toStartOf="@+id/WarehouseRecieptbtn"
+            app:layout_constraintTop_toBottomOf="@+id/WarehouseRecieptbtn" />
+
+
+        <ImageButton
+            android:id="@+id/LabelWriterbtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/price_tag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productaccepttext"
+            app:layout_constraintVertical_bias="0.13"
+            tools:src="@drawable/price_tag" />
+
+        <TextView
+            android:id="@+id/LabelWritertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etiket Yazdırma"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/LabelWriterbtn"
+            app:layout_constraintStart_toStartOf="@+id/LabelWriterbtn"
+            app:layout_constraintTop_toBottomOf="@+id/LabelWriterbtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
